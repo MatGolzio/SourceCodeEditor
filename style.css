@@ -1,0 +1,249 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: rgb(29, 28, 28);
+	box-shadow: 20px 0px 13px black;
+}
+
+#main-menu ul li {
+	padding: 6px;
+	margin-right: 3px;
+}
+
+.selected {
+	border-bottom: 2px solid white;
+}
+
+.main {
+	margin: auto;
+	width: 50%;
+	border-radius: 30px;
+	padding: 10px;
+	box-shadow: 0px 0px 100px #2b2b2b;
+	top: 50%;
+	bottom: 50%;
+	height: 470px;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+
+.inputFile {
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 30px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline;
+	font-size: 15px;
+	transition: 0.2s;
+}
+
+.inputFile:hover {
+	border-radius: 50px;
+	background: #008F10;
+}
+
+.backbt {
+	background: #4CAF50;
+	color: white;
+	padding: 8px;
+	position: relative;
+	border-radius: 5px;
+	margin: auto;
+	cursor: pointer;
+} .backbt:hover {color: white;}
+
+
+.btnew {
+  cursor: pointer;
+  background-color: #3483eb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.316);
+  font-size: 26px;
+  transition: 0.2s;
+}
+
+.buttonsedit {
+	margin: auto;
+	width: 410px;
+	box-shadow: 0px 0px 20px #2b2b2b;
+	background: none;
+	border-radius: 20px;
+	padding: 10px;
+	top: 20%;
+	bottom: 20%;
+	align-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.mainedit {
+	margin: auto;
+	width: 390px;
+	box-shadow: 0px 0px 100px #2b2b2b;
+	border-radius: 20px;
+	padding: 20px;
+	top: 20%;
+	bottom: 20%;
+	align-content: center;
+	align-items: center;
+}
+
+
+.btexit {
+  cursor: pointer;
+  background-color: #ec131b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 26px;
+  transition: 0.2s;
+}
+
+.btsave {
+	cursor: pointer;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 20px;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline;
+	font-size: 26px;
+	transition: 0.2s;
+}
+
+.btexit:hover {
+	background-color: #ac0c06;
+}
+.btsave:hover {
+	background-color: #548c66;
+}
+
+.btnew:hover {
+	background-color: #3277d1;
+}
+
+.buttons:hover {
+
+}
+
+.buttons {
+	
+}
+
+.titlenew {
+	margin: auto;
+	width: 50%;
+	background: none;
+	border-radius: 20px;
+	padding: 20px;
+	top: 20%;
+	bottom: 20%;
+	align-content: center;
+	align-items: center;
+}
+
+
+.textcode {
+	width: 100%;
+	background: rgb(175, 174, 174);
+	height: 500px;
+	font: normal 15pt "consolas";
+	color: white;
+	border-radius: 0px;
+	margin-top: 10px;
+	margin: auto;
+}
+
+.textaboutus {
+	width: 500px;
+	box-shadow: 0px 0px 40px #808080;
+	background: none;
+	border-radius: 20px;
+	padding: 10px;
+	bottom: 20%;
+	transition: 0.4s;
+}
+
+.textaboutsite {
+	width: 300px;
+	box-shadow: 0px 0px 40px #808080;
+	background: none;
+	border-radius: 20px;
+	padding: 10px;
+	bottom: 20%;
+	transition: 0.4s;
+}
+
+.config-box {
+	margin: auto;
+	width: 390px;
+	border-radius: 20px;
+	padding: 20px;
+	top: 20%;
+	bottom: 20%;
+	align-content: center;
+	align-items: center;
+	color: black;
+	box-shadow: 0px 0px 100px #2b2b2b;
+}
+
+.config, .config:hover {
+	color: grey;
+}
+
+.config-box input, .config-box select {
+	border: 2px solid black;
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 13px #2b2b2b;
+}
+
+.test-theme {
+	background: grey;
+	color:white;
+	padding: 5px;
+	border: 1px solid black;
+	box-shadow: 0px 0px 20px black;
+	border-radius: 4px;
+}
+
+#filename {
+	padding: 5px;
+	border-radius: 13px;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 40px #2b2b2b98;
+	transition: 0.4s;
+}
+
+#filename:focus {
+	padding: 6px;
+	border-radius: 13px;
+	border: none;
+	box-shadow: 0px 0px 13px #2b2b2b;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<!--Icon-->
+	<link rel="icon" href="res/favicon.ico" type="image/x-icon">
+
+	<!--Boostrap CSS files-->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Edit Code</title>
+</head>
+<body>
+	<header class="fixed">
+		<div class="container">
+			<nav class="navbar navbar-expand-sm navbar-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+				<div class="navbar-collapse collapse" id="main-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">Open</a></li>
+						<li class="nav-item selected"><a href="#" class="nav-link">Edit</a></li>
+						<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>  
+					</ul>
+				</div>
+
+				<a href="index.html" style="color: grey;font-size: 23px;">Source Code <span style="color: white;text-shadow:0px 0px 10px #FFFFFF,
+               0px 0px 10px #FFFFFF,
+               0px 0px 10px #FFFFFF;">Editor</span></a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="config-box">
+				<h2 style="margin-bottom: 40px;">Configurations</h2>
+				<span style="margin-right: 10px;">Font Size</span><input type="number" style="width:60px;" value="22" id="fontsize">
+
+				<select id="font">
+					<option>Select a font</option>
+					<option>Sans-serif</option>
+					<option>Verdana</option>
+					<option>Roboto</option>
+				</select>
+
+				<input type="button" value="OK" style="display: inline;cursor: pointer;" onmouseup=btNewFontSelector()>
+
+				<select id="theme" style="margin-top: 40px;" onmouseup=btNewThemeSelector()>
+					<option>Select a theme</option>
+					<option>Blue</option>
+					<option>Red</option>
+					<option>Dark</option>
+				</select>
+
+				<span id="test-theme" class="test-theme" style="margin-left: 15px;">Theme Demonstration</span>
+				
+				<br><br>
+				<a href="edit.html" class="backbt">Back</a>
+								
+				
+			
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js">
+	</script>
+	<!--Boostrap Script files-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

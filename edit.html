@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+
+	<!--Icon-->
+	<link rel="icon" href="res/favicon.ico" type="image/x-icon">
+
+	<!--Boostrap CSS files-->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Edit Code</title>
+</head>
+<body>
+	<header class="fixed">
+		<div class="container">
+			<nav class="navbar navbar-expand-sm navbar-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+
+				<div class="navbar-collapse collapse" id="main-menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">Open</a></li>
+						<li class="nav-item selected"><a href="#" class="nav-link">Edit</a></li>
+						<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>  
+					</ul>
+				</div>
+
+				<a href="index.html" style="color: grey;font-size: 23px;">Source Code <span style="color: white;text-shadow:0px 0px 10px #FFFFFF,
+               0px 0px 10px #FFFFFF,
+               0px 0px 10px #FFFFFF;">Editor</span></a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="mainedit col-sm-12">
+				<div class="buttonsedit">
+					<input type="button" class="btsave" id="savebt" value="Save File">
+					<input type="button" class="btexit" id="exitbt" value="Exit edit page"><br>
+				</div>
+				<br><h2>Editing File: <span id="filenameedit">Name of the file</span></h2><span><a class="config" href="config.html">Configurations</a></span>
+				
+				<textarea class="textcode" id="textcode" ></textarea>
+			
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js">
+	</script>
+	<script src="basicAutoC.js"></script>
+	<script>
+		// File name
+		editfilename = window.document.getElementById('filenameedit');
+		editfilename.innerHTML = queryString("Nomedoarquivo");
+
+		// Text code config
+		textcode = window.document.getElementById('textcode');
+		textcode.style.backgroundColor = queryString("Tema");
+		textcode.style.font-size = queryString("Tamanhofonte")
+		textcode.style.font-family = queryString("Fonte")
+	</script>
+	<!--Boostrap Script files-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
