@@ -23,7 +23,6 @@
 				<div class="navbar-collapse collapse" id="main-menu">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item"><a href="index.html" class="nav-link">Open</a></li>
-						<li class="nav-item selected"><a href="#" class="nav-link">Edit</a></li>
 						<li class="nav-item"><a href="about.html" class="nav-link">About us</a></li>  
 					</ul>
 				</div>
@@ -39,20 +38,28 @@
 		<div class="row">
 			<div class="mainedit col-sm-12">
 				<div class="buttonsedit">
-					<input type="button" class="btsave" id="savebt" value="Save File">
-					<input type="button" class="btexit" id="exitbt" value="Exit edit page"><br>
+					<input type="button" class="btsave" id="savebt" value="Save File" onclick=saveFile()>
+					<input type="button" class="btexit" id="exitbt" value="Exit edit page" onmouseup=window.location.href="index.html"><br>
 				</div>
 				<br><h2>Editing File: <span id="filenameedit">Name of the file</span></h2><span><a class="config" href="config.html">Configurations</a></span>
 				
-				<textarea class="textcode" id="textcode" ></textarea>
+				<textarea class="textcode" id="textcode" onkeydown=colorcode()></textarea>
 			
 			</div>
 		</div>
 	</div>
 
+	<div class="saved-message bg-success" id="saved-message">
+		<span style="float: left;">Arquivo salvo com sucesso!</span>
+		<span style="float: right;" onmouseup=document.getElementById("saved-message").style.display="none" class="close">X</span>
+	</div>
+
 	<script src="script.js">
 	</script>
+	<script src="shortcuts.js">
+	</script>
 	<script src="basicAutoC.js"></script>
+	<script src="codecontrol.js"></script>
 	<script>
 		// File name
 		editfilename = window.document.getElementById('filenameedit');
@@ -61,9 +68,11 @@
 		// Text code config
 		textcode = window.document.getElementById('textcode');
 		textcode.style.backgroundColor = queryString("Tema");
-		textcode.style.font-size = queryString("Tamanhofonte")
-		textcode.style.font-family = queryString("Fonte")
+		textcode.style.fontSize = queryString("Tamanhofonte");
+		textcode.style.fontFamily = queryString("Fonte");
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/eligrey/FileSaver.js/5ed507ef8aa53d8ecfea96d96bc7214cd2476fd2/FileSaver.min.js"></script>
 	<!--Boostrap Script files-->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

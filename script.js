@@ -3,7 +3,7 @@
 var bt_open = window.document.getElementById(`openbt`);
 var bt_save = window.document.getElementById(`savebt`);
 var bt_exit = window.document.getElementById(`exitbt`);
-
+var textcode = window.document.getElementById("textcode")
 
 // Config page
 
@@ -32,7 +32,7 @@ function btNewThemeSelector() {
 }
 
 function btNewFontSelector() {
-	var font_size = window.document.getElementById("fontsize");
+	var font_size = window.document.getElementById("fontsize").value;
 	var font = window.document.getElementById("font").value;
 
 	if (font == "Sans-serif") {
@@ -75,4 +75,13 @@ function queryString(parameter) {
 	else {   
 			return undefined;   
 	}   
+}
+
+// Save file
+function saveFile() {
+	let textcode = document.getElementById("textcode").value;
+	let filename = document.getElementById("filenameedit").innerHTML;
+	let blob = new Blob([textcode], { type: "text/plain;charset=utf-8" });
+	saveAs(blob, filename);
+	document.getElementById("saved-message").style.display = "block";
 }
